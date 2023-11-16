@@ -17,10 +17,10 @@ let strip = neopixel.create(PIN_NEOPIXEL, NUM_LEDS, NeoPixelMode.RGB);
 
 // COLORS
 let COL_BLUE = 216;
-let COL_PINK = -14;
-let COL_GREEN = 150;
-let COL_ORANGE = 0;
-let COL_YELLOW = 20;
+let COL_PINK = -10;
+let COL_GREEN = 155;
+let COL_ORANGE = 5;
+let COL_YELLOW = 15;
 let COL_NO_COLOR = 60;
 let COL_EMPTY = -1000;
 let ARR_COL = [COL_BLUE, COL_PINK, COL_GREEN, COL_YELLOW];
