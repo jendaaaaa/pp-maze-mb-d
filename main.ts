@@ -55,7 +55,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.onReceivedValue(function (name: string, value: number) {
     if (name === RADIO_COLOR_NAME) {
         colorCorrect = value;
-        basic.showNumber(value);
+        // basic.showNumber(value);
     }
 })
 
