@@ -10,6 +10,7 @@ let PIN_SCL = DigitalPin.P20;
 
 // INIT
 radio.setGroup(8);
+basic.showString("D");
 apds9960.Init(11.12);
 apds9960.ColorMode();
 let NUM_LEDS = 8;
@@ -17,14 +18,14 @@ let strip = neopixel.create(PIN_NEOPIXEL, NUM_LEDS, NeoPixelMode.RGB);
 
 // COLORS
 let COL_BLUE = 216;
-let COL_PINK = -10;
-let COL_GREEN = 155;
-let COL_ORANGE = 5;
-let COL_YELLOW = 15;
+let COL_PINK = -14;
+let COL_GREEN = 150;
+let COL_YELLOW = 20;
+// let COL_ORANGE = 5;
 let COL_NO_COLOR = 60;
 let COL_EMPTY = -1000;
 let ARR_COL = [COL_BLUE, COL_PINK, COL_GREEN, COL_YELLOW];
-let ERROR = 10;
+let ERROR = 20;
 let LIGHT_TRESHOLD = 300;
 
 // VARIABLES
@@ -74,8 +75,8 @@ basic.forever(function () {
             colorNeopixel = neopixel.rgb(28, 238, 0);
         } else if (colorMeasured <= COL_BLUE + ERROR && colorMeasured >= COL_BLUE - ERROR) {
             colorNeopixel = neopixel.rgb(0, 203, 255);
-        } else if (colorMeasured <= COL_ORANGE + ERROR && colorMeasured >= COL_ORANGE - ERROR) {
-            colorNeopixel = neopixel.rgb(255, 34, 0);
+        // } else if (colorMeasured <= COL_ORANGE + ERROR && colorMeasured >= COL_ORANGE - ERROR) {
+        //     colorNeopixel = neopixel.rgb(255, 34, 0);
         } else if (colorMeasured <= COL_YELLOW + ERROR && colorMeasured >= COL_YELLOW - ERROR) {
             colorNeopixel = neopixel.rgb(255, 130, 0);
         } else if (colorMeasured <= COL_PINK + ERROR && colorMeasured >= COL_PINK - ERROR) {
