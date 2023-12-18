@@ -81,8 +81,8 @@ basic.forever(function () {
             colorNeopixel = NEO_GREEN;
         } else if (colorMeasured <= COL_BLUE + ERROR && colorMeasured >= COL_BLUE - ERROR) {
             colorNeopixel = NEO_BLUE;
-            // } else if (colorMeasured <= COL_ORANGE + ERROR && colorMeasured >= COL_ORANGE - ERROR) {
-            //     colorNeopixel = neopixel.rgb(255, 34, 0);
+        // } else if (colorMeasured <= COL_ORANGE + ERROR && colorMeasured >= COL_ORANGE - ERROR) {
+        //     colorNeopixel = neopixel.rgb(255, 34, 0);
         } else if (colorMeasured <= COL_YELLOW + ERROR && colorMeasured >= COL_YELLOW - ERROR) {
             colorNeopixel = NEO_YELLOW;
         } else if (colorMeasured <= COL_PINK + ERROR && colorMeasured >= COL_PINK - ERROR) {
